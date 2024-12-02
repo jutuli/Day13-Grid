@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-parent {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 10fr 1fr;
+}
+
+header {
+  background-color: blue;
+  grid-area: 1 / 1 / 1 / 3;
+}
+
+aside {
+  background-color: green;
+  grid-area: 2 / 1 / 3 / 1;
+}
+
+main {
+  background-color: red;
+  grid-area: 2 / 2 / 3 / 2;
+}
+
+footer {
+  background-color: purple;
+  grid-area: 3 / 1 / 3 / 3;
+}
