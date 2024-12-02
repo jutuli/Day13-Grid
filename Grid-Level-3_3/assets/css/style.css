@@ -100,5 +100,32 @@ main img {
 aside {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 0.1fr repeat(3, 1fr);
+  gap: 10px;
+  margin-right: 10px;
+}
+
+h4 {
+  grid-area: 1 / 1 / 1 / 1;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+aside article,
+aside img {
+  text-align: center;
+  padding: 20px;
+  border: 3px solid black;
+}
+
+aside article:nth-of-type(1) {
+  font-size: 5rem;
+}
+
+aside article h5 {
+  font-size: 2.4rem;
+}
+
+aside article p {
+  font-size: 1.6rem;
 }
